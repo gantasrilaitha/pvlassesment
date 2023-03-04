@@ -1,0 +1,98 @@
+<html>
+	<head>
+		<title>React</title>
+		<script crossdomain src="https://unpkg.com/react@16/umd/react.development.js"> </script> 
+		<script crossdomain src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"> </script> 
+		<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"> </script>
+      <style>
+      p{color:blue}
+      .search-container {float: right;}
+      #ad{position:relative;width:30px;height:2px;margin:10px auto;left:3px;}
+      .container{position:relative;width:1252px;height:200px;margin:150px auto;display:flex;left:110px;}
+      .container .box{position:relative;left:20px;width:300px; height: 400px;float:left; margin:10px;padding: 15px 5px; background:lightgrey;box-sizing:border-box; overflow:hidden; border-radius:2px;}
+       #total{text-align:center; display:inline-block; color:purple; padding: 15px 20px; font-size:20px;font-family: "Aerial";border: 2px solid purple;width: 100%;}
+      #t1{text-align:center; display:inline-block;color:white; padding: 15px 20px; font-size:20px;font-family: "Aerial";width: 100%;}
+      #a1{text-align:center; display:inline-block;color:black; padding: 15px 20px; font-size:20px;font-family: "Aerial";width: 100%;}
+      #man{text-align:center; display:inline-block; color:white; padding: 3px 3px; font-size:18px;font-family: "Aerial";border: 2px solid white;width: 80%;}
+      .sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 150px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color:blue; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+	</style>
+	</head>
+	<body>
+      
+      <div class="sidenav" id="d1">
+  <h3 style="color:white">Admin Pannel</h3>
+  <h3 style="color:white" id="man">Manage Categories</h3>
+  <h3 style="color:white">Add User</h3>
+  <h3 style="color:white">Add New Certificates</h3>
+  <h3 style="color:white">University Actions</h3>
+  <h3 style="color:white">Add Students</h3>
+  <h3 style="color:white">Add MCQ</h3>
+  <h3 style="color:white">Recruiters/Jobs</h3>
+  <h3 style="color:white">Universities</h3>
+  <h3 style="color:white">View All Users</h3>
+  <h3 style="color:white">Trial Version</h3>
+  <h3 style="color:white">Add Blogs</h3>
+  <button id="b" >Close SlideBar</button>
+</div>
+<script>
+   element = document.getElementById("d1");
+    but=document.getElementById("b");
+  function closeNav() {
+  document.getElementById("d1").style.width = "0";
+ }
+ but.addEventListener("click", closeNav);
+</script>
+     
+     <pre>			<button >Finance</button> <button >Electronics</button> <button >Content Writing</button> <button >Medis&Communication</button>  <button >Software Services</button>
+
+  			<button >Human Resource</button> <button >Marketing</button> <button >Construction</button>  <button >Teaching</button> <button >BuisneessDev</button> <button >Soft Skills</button> 
+
+ 			<button >Management</button>  <button >Entreprenurship</button> <button >Miscellanious</button>  <button >Custom</button>  <button >CreativeDesign</button>
+
+			<button >Applications</button>  <button >Buisness Operations</button></pre>
+  	<pre><p align="center">Certificates under category</p></pre>           
+      <pre>										<input type="text" placeholder="Search..🔍" name="search" align="center"> </pre>                                                                                                                                                         
+
+<div class="container">
+<div class="box"> <pre><h2> Finance          Know more</h2></pre>
+<h3 align="center" style="color:blue">Accounts Finance </h3>
+<h3  align="center" style="color:green">7</h3>
+<button bgcolor="green" align="center"id="t1" style="background-color:green">Tag a job</button>
+<button align="center" id="total">Employees Enrolled</button>
+<button align="center" id="a1">Assign Certificate</button>  </div>
+
+<div class="box"><pre><h2> Finance          Know more</h2></pre>
+<h3 align="center" style="color:blue">Taxation Finance </h3>
+<h3  align="center" style="color:green">4</h3>
+<button bgcolor="green" align="center"id="t1" style="background-color:green">Tag a job</button>
+<button align="center" id="total">Employees Enrolled</button>
+<button align="center" id="a1">Assign Certificate</button></div>
+
+<div class="box"><pre><h2> Finance          Know more</h2><pre>
+<h3 align="center" style="color:blue">Finance </h3>
+<h3  align="center" style="color:green">5</h3>
+<button bgcolor="green" align="center"id="t1" style="background-color:green">Tag a job</button>
+<button align="center" id="total">Employees Enrolled</button>
+<button align="center" id="a1">Assign Certificate</button></div>
+
+<div class="box"><pre><h2> Finance          Know more</h2><pre>
+<h3 align="center" style="color:blue">Financial Market</h3>
+<h3  align="center" style="color:green">0</h3>
+<button bgcolor="green" align="center"id="t1" style="background-color:green">Tag a job</button>
+<button align="center" id="total">Employees Enrolled</button>
+<button align="center" id="a1">Assign Certificate</button></div>
+
+ </div>
+  
+</body>
+</html>
